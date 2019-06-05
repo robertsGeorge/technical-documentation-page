@@ -13,10 +13,23 @@ body {
 
 
 #navbar {
-  position: sticky; // fixed removes item from grid formatting context
+  position: sticky;  /* fixed removes item from grid formatting context */
   top: 0px;
-  height: 100vh; // prevents scrolling 
+  height: 100vh; /* prevents scrolling */
+  
+  /* FLEX CONTAINER */
+  display: flex;
+  flex-direction: column; 
 }
 
 
+@media (max-width: 400px) {
+  body {
+    grid-template-columns: auto;
+    grid-row-gap: 15px;
+  }
 
+  #navbar {
+    height: auto;
+  }
+}
