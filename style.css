@@ -1,0 +1,22 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* GRID CONTAINER */
+body {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-column-gap: 15px;
+}
+
+
+#navbar {
+  position: sticky; // fixed removes item from grid formatting context
+  top: 0px;
+  height: 100vh; // prevents scrolling 
+}
+
+
+
