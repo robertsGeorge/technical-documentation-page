@@ -11,67 +11,76 @@
 <body>
   
   <nav id="navbar">
-    <header>Topic of the Technical Documentation</header>
-    <a class="nav-link" href="#Section_Title">Section Title</a>
-    <a class="nav-link" href="#Section_Title">Section Title</a>
-    <a class="nav-link" href="#Section_Title">Section Title</a>
-    <a class="nav-link" href="#Section_Title">Section Title</a>
-    <a class="nav-link" href="#Section_Title">Section Title</a>
+    <header>Intermediate & Advanced JavaScript Topics</header>
+    <a class="nav-link" href="#Closures">Closures</a>
+    <a class="nav-link" href="#Promises">Promises</a>
+    <a class="nav-link" href="#Inheritance_&_the_Prototype_Chain">Inheritance & the Prototype Chain</a>
+    <a class="nav-link" href="#Concurrency_Model_&_the_Event_Loop">Concurrency Model & the Event Loop</a>
+    <a class="nav-link" href="#Typed_Arrays">Typed Arrays</a>
   </nav>
 
   <main id="main-doc">
-    <section class="main-section" id="Section_Title">
-      <header>Recursion</header>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ipsam molestias omnis, velit laborum perspiciatis alias iusto officiis obcaecati autem aliquam excepturi! Quo delectus maxime incidunt error quod quasi numquam?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam. Nam velit esse autem earum asperiores porro, quos magnam facere expedita totam impedit quibusdam culpa! In culpa nihil error reprehenderit.</p>
-      <code>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates laboriosam mollitia rem beatae similique officiis consequuntur laborum voluptatum. Dolorum sequi iure commodi voluptatum repellendus necessitatibus recusandae vitae quaerat odit aut.</code>
+    <section class="main-section" id="Closures">
+      <header>Closures</header>
+      <p>A closure is the combination of a function and the lexical environment within which that function was declared.</p>
+      <p>Closures are useful because they let you associate some data (the lexical environment) with a function that operates on that data. This has obvious parallels to object-oriented programming, where objects allow us to associate some data (the object's properties) with one or more methods.</p>
+      <code>function makeFunc() {
+        var name = 'Mozilla';
+        function displayName() {
+          alert(name);
+        }
+        return displayName;
+      }
+      
+      var myFunc = makeFunc();
+      myFunc();</code>
       <ul>
         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil amet voluptates magni voluptate recusandae tempore voluptatum quidem, error, soluta ad ipsam cumque adipisci quo! Quisquam ratione quibusdam expedita quas quia?</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repudiandae neque consequuntur quis eveniet rerum excepturi velit est alias. Sed laudantium perspiciatis magnam vel suscipit amet ipsum a dolorem libero?</li>
       </ul>
     </section>
     
-    <section class="main-section" id="Section_Title">
+    <section class="main-section" id="Promises">
       <header>Promises</header>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius non inventore dolorem quam ipsa illum at excepturi in illo. Accusamus, dolores voluptate. Labore fugiat veniam eius officiis dolor excepturi repellat.</p>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sint laudantium dolorem, deserunt deleniti perspiciatis alias quos dicta ipsa autem. Commodi provident nisi, veritatis non labore aut suscipit optio voluptatum.</p>
       <code>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis totam et at iusto maxime tempora, amet, quaerat aliquam eligendi repudiandae molestiae, laboriosam excepturi id voluptates reiciendis architecto! Consequuntur, inventore atque.</code>
       <ul>
-        <li></li>
-        <li></li>
+        <li>list item 1</li>
+        <li>list item 2</li>
       </ul>
     </section>
     
-    <section class="main-section" id="Section_Title">
-      <header>Closure</header>
-      <p></p>
-      <p></p>
-      <code></code>
+    <section class="main-section" id="Inheritance_&_the_Prototype_Chain">
+      <header>Inheritance & the Prototype Chain</header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi a libero voluptates non perspiciatis ducimus fugiat cum illum labore cumque, exercitationem nobis, ipsum delectus ullam reprehenderit eaque culpa! Culpa.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nulla excepturi dolor est alias consectetur nostrum culpa ratione cupiditate fugit blanditiis quia consequuntur corporis, laborum nobis provident nam, quis similique.</p>
+      <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum perferendis eos quibusdam, deserunt quasi reprehenderit adipisci maiores, corrupti, vero delectus alias temporibus accusamus natus aliquam. Laborum explicabo inventore dolores!</code>
       <ul>
-        <li></li>
-        <li></li>
+        <li>list item 1</li>
+        <li>list item 2</li>
       </ul>
     </section>
     
-    <section class="main-section" id="Section_Title">
-      <header>Prototypes</header>
-      <p></p>
-      <p></p>
-      <code></code>
+    <section class="main-section" id="Concurrency_Model_&_the_Event_Loop">
+      <header>Concurrency Model & the Event Loop</header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, laborum minus dolor optio rerum, nobis ratione quis quasi consequuntur ullam doloremque facere reiciendis iste obcaecati, quod similique esse. Unde, voluptatibus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet esse odio laboriosam facere ut dolor quisquam veritatis cum est tempora quidem et sed perspiciatis corrupti, doloremque voluptate modi? Dolorem, iure.</p>
+      <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias corporis incidunt aliquid sapiente libero non exercitationem hic quisquam quos consequatur aliquam, aperiam veritatis expedita tempora sunt maiores illo ipsa consectetur?</code>
       <ul>
-        <li></li>
-        <li></li>
+        <li>list item 1</li>
+        <li>list item 2</li>
       </ul>
     </section>
     
-    <section class="main-section" id="Section_Title">
-      <header>ES6</header>
-      <p></p>
-      <p></p>
-      <code></code>
+    <section class="main-section" id="Typed_Arrays">
+      <header>Typed Arrays</header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio quasi nulla eaque nesciunt quas ex voluptate reiciendis iste aliquam minima, adipisci velit eligendi cum praesentium placeat fuga cumque nihil.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem illo rem blanditiis saepe explicabo ex, dicta ut velit modi accusamus, id eius doloremque quis eum expedita voluptates laboriosam aliquam?</p>
+      <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolore dolorum incidunt adipisci repellendus sunt officiis sequi at facere ullam, nihil nobis magni error sapiente unde tempora nesciunt, asperiores facilis?</code>
       <ul>
-        <li></li>
-        <li></li>
+        <li>list item 1</li>
+        <li>list item 1</li>
       </ul>
     </section>
 
